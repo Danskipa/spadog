@@ -7,18 +7,22 @@ h6,
 p,
 ul,
 ol {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 a {
   text-decoration: none;
   color: inherit;
 }
-button {
-  outline: 0;
-  border: 0;
-  font-weight: inherit;
-}
-ul {
+ul,
+ol {
   list-style: none;
+}
+
+button {
+  border: 0;
+  outline: 0;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
 }

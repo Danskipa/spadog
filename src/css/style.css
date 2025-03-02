@@ -1,13 +1,13 @@
 :root {
   /* шрифти */
   --fontPrimary: "Raleway", serif;
-  --fontSecond: "Oswald", serif;
+  --fontSecondary: "Oswald", serif;
   /* кольори */
   --colorTextPrimary: #000000;
-  --colorTExtContrast: #ffffff;
+  --colorTextContrast: #ffffff;
   --colorButton: #b2ffa6;
-  --colorBGPrimary: #121212;
-  --colorBGSection: #efefef;
+  --colorBgPrimary: #121212;
+  --colorBgSection: #efefef;
 }
 body {
   font-family: var(--fontPrimary);
@@ -16,42 +16,135 @@ body {
   line-height: 1.17;
   font-weight: 400;
 }
+.container {
+  max-width: 1650px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .header {
-  background-color: var(--colorTextPrimary);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: var(--colorBgPrimary);
+}
+.nav-list {
+  display: flex;
+  gap: 100px;
+  align-items: center;
 }
 .nav-link {
-  font-family: var(--textSecond);
-  color: var(--colorTExtContrast);
+  font-family: var(--fontSecondary);
+  color: var(--colorTextContrast);
   text-decoration: none;
 }
 .nav-link:hover {
   color: var(--colorButton);
 }
-
 /* hero */
+.hero-container {
+  display: flex;
+  gap: 342px;
+}
+
+.hero-content {
+  padding-top: 150px;
+  padding-bottom: 365px;
+}
 .hero-title {
+  font-weight: inherit;
   font-size: 64px;
+  text-transform: capitalize;
+  font-weight: 400;
+  line-height: 85px;
+  margin-bottom: 50px;
 }
 .hero-title-part {
   font-weight: 700;
-  font-size: 64px;
 }
 .hero-button {
-  line-height: 1.5;
-  letter-spacing: 0.06cm;
   background-color: var(--colorButton);
-  font-family: var(--fontPrimary);
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  font-family: var(--fontSecondary);
+  font-size: 26px;
+  padding: 15px 80px;
+  border-radius: 5px;
 }
 /* about */
 .about {
-  background-color: var(--colorBGSection);
+  background-color: var(--colorBgSection);
+}
+.about-content {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .about-title {
   font-weight: 700;
-  text-transform: capitalize;
   font-size: 40px;
+  text-transform: capitalize;
 }
 .about-text {
-  font-size: 32px;
   line-height: 1.19;
+  font-size: 32px;
+}
+.about-link {
+  background-color: var(--colorButton);
+  font-family: var(--fontSecondary);
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  color: var(--colorTextPrimary);
+}
+/* benefits */
+.benefits {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.benefits-title {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+/* services */
+.services {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.services-title {
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: capitalize;
+  text-align: center;
+}
+.services-text {
+  font-size: 32px;
+  text-align: center;
+}
+.services-name {
+  font-weight: 600;
+}
+.services-button {
+  font-family: var(--fontSecondary);
+  letter-spacing: 0.06em;
+  border: 3px solid var(--colorButton);
+  border-radius: 5px;
+  background-color: transparent;
+}
+/* footer */
+.footer {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background-color: var(--colorBgPrimary);
+}
+.footer-logo {
+  font-weight: 300;
+  font-size: 40px;
+  text-transform: capitalize;
+  color: var(--colorTextContrast);
+}
+.footer-logo-part {
+  font-weight: 700;
+}
+.footer-policy {
+  color: var(--colorTextContrast);
 }
